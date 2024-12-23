@@ -18,7 +18,7 @@ RUN mkdir /peridigm/build
 ENV OMPI_ALLOW_RUN_AS_ROOT 1
 ENV OMPI_ALLOW_RUN_AS_ROOT_CONFIRM 1
 WORKDIR /peridigm/build/
-RUN apt-get install python-is-python3
+RUN apt-get update && apt-get install python-is-python3 --fix-missing
 RUN cmake \
     -D CMAKE_BUILD_TYPE:STRING=Release \
     -D CMAKE_INSTALL_PREFIX:PATH=/usr/local/peridigm \

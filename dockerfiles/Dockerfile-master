@@ -1,4 +1,4 @@
-FROM peridigm/peridigm:test AS builder
+FROM peridigm:test AS builder
 
 ENV HOME /root
 

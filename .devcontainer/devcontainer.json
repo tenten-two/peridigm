@@ -1,1 +1,2 @@
+// 备忘：以后就是创建 codespace 之后，先 make test，然后 make -j 4 ；然后 make install ；然后再去执行 example
 {"image":"peridigm/peridigm:test" , "postCreateCommand": "echo 'export PATH=/usr/local/peridigm/:$PATH' > /root/.bashrc"}

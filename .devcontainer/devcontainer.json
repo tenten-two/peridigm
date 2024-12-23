@@ -1,1 +1,1 @@
-{"image":"peridigm/peridigm:test"}
+{"image":"peridigm/peridigm:test" , "postCreateCommand": "echo 'export PATH=/usr/local/peridigm/:$PATH' > /root/.bashrc"}
